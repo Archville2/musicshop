@@ -4,10 +4,6 @@ import by.kurlovich.musicshop.entity.User;
 
 public class UserUtil {
     public static String getId(User currentUser) {
-        if (currentUser != null) {
-            return currentUser.getId();
-        } else {
-            return "0";
-        }
+        return currentUser != null ? currentUser.getId() : "0";
     }
 }
